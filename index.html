@@ -44,6 +44,7 @@ h3 { font-family:'Montserrat',sans-serif; font-size:1rem; font-weight:700; text-
 .peach { color:var(--peach); }
 p { font-size:0.9rem; color:var(--text-mid); font-weight:300; line-height:1.8; }
 .split { display:grid; grid-template-columns:2fr 3fr; gap:3rem; align-items:center; }
+@media (max-width:900px){ .two-col-rows{ grid-template-columns:1fr !important; } }
 .split-even { display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center; }
 .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
 .grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem; }
@@ -285,46 +286,11 @@ p { font-size:0.9rem; color:var(--text-mid); font-weight:300; line-height:1.8; }
 <section class="slide slide-html" data-editable="true">
   <div class="glow glow-tl"></div>
   <div class="inner">
-    <div class="split">
+    <div class="split" style="align-items:center;">
       <div>
         <span class="task-num">Task Four</span>
-        <h2>Advertising & <span class="teal">Offer Strategy</span></h2>
+        <h2>Advertising &amp; <span class="teal">Offer Strategy</span></h2>
         <div class="quote"><p>"Between June and now I already got almost 1,560 new followers, which is great. But obviously none of that is still resulting in dollars."</p></div>
-        <div style="display:grid; gap:0.55rem;">
-          <div style="display:flex; align-items:baseline; gap:0.6rem;">
-            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Campaign 1</span>
-            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">Jasna, the authority. Interview-style video, someone asking you the questions: "You've been treating skin for 26 years, what's changed?" "Why don't you use the same treatment on everyone?"</span>
-          </div>
-          <div style="display:flex; align-items:baseline; gap:0.6rem;">
-            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Campaign 2</span>
-            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">Pigmentation and mature skin, problem-led. "You've spent years trying to fix your pigmentation. So why does it keep coming back?" CTA: book your consultation with Jasna</span>
-          </div>
-          <div style="display:flex; align-items:baseline; gap:0.6rem;">
-            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Campaign 3</span>
-            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">Retargeting. Anyone who watched a video, visited the site or enquired but did not book gets more education. Trust is the hardest part, so the marketing solves trust</span>
-          </div>
-          <div style="display:flex; align-items:baseline; gap:0.6rem;">
-            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Google</span>
-            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">Rebuilt once the site exists. Laser skin clinic Milton, pigmentation treatment Brisbane, acne scarring Brisbane. Each search lands on its own page</span>
-          </div>
-          <div style="display:flex; align-items:baseline; gap:0.6rem;">
-            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Reviews</span>
-            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">An automated ask after every appointment. Dozens of women describing your knowledge and how their skin changed, before a new client ever meets you</span>
-          </div>
-          <div style="display:flex; align-items:baseline; gap:0.6rem;">
-            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Content</span>
-            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">One filming session every month or two becomes ten short videos, four posts, FAQs, emails and ads. No dancing on Instagram</span>
-          </div>
-          <div style="display:flex; align-items:baseline; gap:0.6rem;">
-            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Database</span>
-            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">Your 50 skincare clients first, then the treatment book, then Irena's 30-year clients when the purchase lands. Rebooking, replenishment, reviews, reactivation</span>
-          </div>
-          <div style="display:flex; align-items:baseline; gap:0.6rem;">
-            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">No boosts</span>
-            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">No more $15 a day for a week and hoping. Proper campaigns with tracking, landing pages and follow-up behind them</span>
-          </div>
-        </div>
-        <p style="font-size:0.72rem; color:var(--text-faint); margin-top:0.8rem; font-style:italic;">All geo-targeted: Milton, Paddington, Toowong, Auchenflower, Brisbane CBD</p>
       </div>
       <div>
         <div class="browser-frame">
@@ -333,6 +299,41 @@ p { font-size:0.9rem; color:var(--text-mid); font-weight:300; line-height:1.8; }
         </div>
       </div>
     </div>
+    <div class="two-col-rows" style="display:grid; grid-template-columns:1fr 1fr; gap:0.6rem 2.6rem; margin-top:1.5rem;">
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:88px; flex-shrink:0;">Campaign 1</span>
+            <span style="font-size:0.76rem; color:var(--text-mid); line-height:1.45;">Jasna, the authority. Interview-style video, someone asking you the questions: "You've been treating skin for 26 years, what's changed?" "Why don't you use the same treatment on everyone?"</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:88px; flex-shrink:0;">Campaign 2</span>
+            <span style="font-size:0.76rem; color:var(--text-mid); line-height:1.45;">Pigmentation and mature skin, problem-led. "You've spent years trying to fix your pigmentation. So why does it keep coming back?" CTA: book your consultation with Jasna</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:88px; flex-shrink:0;">Campaign 3</span>
+            <span style="font-size:0.76rem; color:var(--text-mid); line-height:1.45;">Retargeting. Anyone who watched a video, visited the site or enquired but did not book gets more education. Trust is the hardest part, so the marketing solves trust</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:88px; flex-shrink:0;">Google</span>
+            <span style="font-size:0.76rem; color:var(--text-mid); line-height:1.45;">Rebuilt once the site exists. Laser skin clinic Milton, pigmentation treatment Brisbane, acne scarring Brisbane. Each search lands on its own page</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:88px; flex-shrink:0;">Reviews</span>
+            <span style="font-size:0.76rem; color:var(--text-mid); line-height:1.45;">An automated ask after every appointment. Dozens of women describing your knowledge and how their skin changed, before a new client ever meets you</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:88px; flex-shrink:0;">Content</span>
+            <span style="font-size:0.76rem; color:var(--text-mid); line-height:1.45;">One filming session every month or two becomes ten short videos, four posts, FAQs, emails and ads. No dancing on Instagram</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:88px; flex-shrink:0;">Database</span>
+            <span style="font-size:0.76rem; color:var(--text-mid); line-height:1.45;">Your 50 skincare clients first, then the treatment book, then Irena's 30-year clients when the purchase lands. Rebooking, replenishment, reviews, reactivation</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:88px; flex-shrink:0;">No boosts</span>
+            <span style="font-size:0.76rem; color:var(--text-mid); line-height:1.45;">No more $15 a day for a week and hoping. Proper campaigns with tracking, landing pages and follow-up behind them</span>
+          </div>
+    </div>
+    <p style="font-size:0.7rem; color:var(--text-faint); margin-top:0.9rem; font-style:italic;">All geo-targeted: Milton, Paddington, Toowong, Auchenflower, Brisbane CBD</p>
   </div>
 </section>
 
